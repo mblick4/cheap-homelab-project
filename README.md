@@ -5,23 +5,23 @@ The core network is routed through 2 Cisco 2901 routers set up for high availabi
 
 ```mermaid
 flowchart TD
-    WAN((Internet)) --> R1[Cisco 2901 Router<br/>Primary]
-    WAN((Internet)) --> R2[Cisco 2901 Router<br/>HA Backup]
+    WAN((Internet)) --> R1["Cisco 2901 Router<br/>Primary"]
+    WAN((Internet)) --> R2["Cisco 2901 Router<br/>HA Backup"]
     
-    subgraph Core Network
-    R1 --> SW1[Dell N1524P Switch]
-    R2 --> SW1
+    subgraph core ["Core Network"]
+        R1 --> SW1["Dell N1524P Switch"]
+        R2 --> SW1
     end
 
-    subgraph Compute & Storage
-    SW1 --> OPT[Dell Optiplex<br/>Proxmox]
-    SW1 --> R905[Dell PowerEdge R905<br/>TrueNAS CORE]
+    subgraph compute ["Compute & Storage"]
+        SW1 --> OPT["Dell Optiplex<br/>Proxmox"]
+        SW1 --> R905["Dell PowerEdge R905<br/>TrueNAS CORE"]
     end
 
-    subgraph Optiplex Services
-    OPT -.-> DHCP[DHCP Server]
-    OPT -.-> WEB[Web Server]
-    OPT -.-> MGMT[Remote Management]
+    subgraph services ["Optiplex Services"]
+        OPT -.-> DHCP["DHCP Server"]
+        OPT -.-> WEB["Web Server"]
+        OPT -.-> MGMT["Remote Management"]
     end
 ```
 ## Hardware Inventory
