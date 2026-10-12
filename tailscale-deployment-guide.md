@@ -1,4 +1,4 @@
-# 🔒 Tailscale Deployment on TrueNAS CORE
+# Tailscale Deployment on TrueNAS CORE
 
 This guide details the deployment of Tailscale within a TrueNAS CORE jail. It includes the necessary configurations for subnet routing and static routes to ensure you can access the TrueNAS host web GUI and other local devices remotely.
 
