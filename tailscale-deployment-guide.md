@@ -1,6 +1,6 @@
 # Tailscale Deployment on TrueNAS CORE
 
-This guide details the deployment of Tailscale within a TrueNAS CORE jail. It includes the necessary configurations for subnet routing and static routes to ensure you can access the TrueNAS host web GUI and other local devices remotely.
+Tailscale is such a lifesaver and has way more use cases than just remote management (i.e. remote file transfer, AirDrop-like feature between any operating system, hosting game servers like Minecraft without Port Forwarding). This guide shows you how to connect a TrueNAS Core computer to your Tailnet but every other device is very easy to connect and I will link their official guide [here](https://tailscale.com/docs/how-to/quickstart).
 
 ## Step 1: Create the Tailscale Jail
 
