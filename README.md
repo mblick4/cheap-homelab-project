@@ -47,3 +47,4 @@ The switch was also given to me by the company and works very well within this s
 There will have to be some drawbacks with having such a cheap setup and most of those drawbacks will be with the actual servers. The R905, while looking good on paper, is still very old and will not run any modern OS. That is why I had to go with TrueNAS Core instead of Scale or another operating system that would have taken advantage of the extra ram. It uses 64 bit v1 processing so I needed a computer that could do 64 bit v2 processing. That is what the Optiplex is for. It runs Proxmox so that I can have separate environments for my web server and dhcp server. I also use this server to remotely manage anything on the network using Tailscale.
 
 [Network Deployment Guide](network-deployment.md)
+[Tailscale Guide for TrueNAS Core](tailscale-deployment-guide.md)
