@@ -34,7 +34,7 @@ flowchart TD
 | **Dell Optiplex** | Hypervisor (Proxmox) | Tower | Intel Core i7-4790 / 32GB DDR3 | 1x 1gbE LAN / Hosts DHCP, Web Server, & Mgmt VMs |
 | **Dell PowerEdge R905** | NAS (TrueNAS CORE) | 4U Rackmount | 4x AMD Opteron 8384 / 128GB DDR2 | PERC 6/i RAID Controller, 2x 10gbE LAN / Basic storage device, stores ISOs for Optiplex |
 
-## Why I choose these devices
+## Why These Devices
 If you are trying to replicate this, you have to be patient in finding any kind of networking equipment. Most of these devices came from an office shutting down and giving away their networking equipment and computers. The only computer I bought was the R905 for $20 on Facebook Marketplace. This may seem like luck but companies do get rid of old tech and list it on marketplaces quite frequently and it just takes time.
 
 ### Routers
@@ -49,3 +49,22 @@ There will have to be some drawbacks with having such a cheap setup and most of 
 [Network Deployment Guide](network-deployment.md)
 
 [Tailscale Guide for TrueNAS Core](tailscale-deployment-guide.md)
+
+## Roadmap & Future Plans
+
+- [ ] Deploy a UPS (Uninterruptible Power Supply) and configure Proxmox and TrueNAS for graceful automated shutdowns.
+- [ ] Set up an automated cron job to backup the Cisco 2901 HA configurations directly to a TrueNAS SMB share.
+- [ ] Implement a reverse proxy (e.g., Nginx Proxy Manager) to route local domain names to the Optiplex web services.
+- [ ] Upgrade the Dell N1524P SFP+ uplinks to 10GbE and add 10gbE card to the Optiplex to make a true 10gb Networking setup.
+
+## Acknowledgments
+
+* The [r/homelab](https://reddit.com/r/homelab) and [r/networking](https://reddit.com/r/networking) communities for architecture inspiration.
+* The [TrueNAS Forums](https://forums.truenas.com/) for guidance on FreeBSD jail networking and Tailscale routing.
+* [Tailscale](https://tailscale.com/) for making the coolest networking project ever.
+
+## Author
+
+**Mason Blick**  
+* GitHub: [@mblick4](https://github.com/mblick4)
+* LinkedIn: [Mason Blick](https://www.linkedin.com/in/mason-blick-78747a43b/)
