@@ -55,6 +55,7 @@ The switch was also given to me by the company and works very well within this s
 - [ ] Set up an automated cron job to backup the Cisco 2901 HA configurations directly to a TrueNAS SMB share.
 - [ ] Implement a reverse proxy (e.g., Nginx Proxy Manager) to route local domain names to the Optiplex web services.
 - [ ] Upgrade the Dell N1524P SFP+ uplinks to 10GbE and add 10gbE card to the Optiplex to make a true 10gb Networking setup.
+- [ ] Buy a server rack to make a more clean setup that is easier to work on.
 
 ## Acknowledgments
 
